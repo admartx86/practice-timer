@@ -1,3 +1,5 @@
+let counter = 0;
+
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -5,11 +7,10 @@ function startTime() {
     var s = today.getSeconds();
     m = formatTime(m);
     s = formatTime(s);
-    document.getElementById('hms').innerHTML =
+    document.getElementById('current-time').innerHTML =
     h + ":" + m + ":" + s;
-    var t = window.setTimeout(startTime, 1000);
-    document.getElementById('t').innerHTML =
-    t;
+    document.getElementById('time-elapsed').innerHTML = counter++
+    window.setTimeout(startTime, 1000);
 }
 
 function formatTime(i) {

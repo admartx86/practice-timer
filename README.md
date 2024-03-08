@@ -1,4 +1,4 @@
-#mart3318.github.io
+🔰 Practice Project
 
 Early JavaScript practice from 2015.
 
